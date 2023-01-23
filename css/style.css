@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Mr+Dafoe&family=Staatliches&display=swap');
+
+body {
+    background-color: white;
+    margin: 0px !important;
+}
+
+a {
+    color: azure;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+li {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    padding: 20px;
+}
+
+.nav-animation {
+    transition: .4s;
+}
+
+.nav-animation:hover {
+    color: red;
+}
+
+.display-nav {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+
+.outline{
+    font-size: 12px;
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+
+.outline::before{
+    content: '';
+    height: 2px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    display: block;
+    background-color: red;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s;
+}
+.outline:hover::before{
+    width: 100%;
+}
+
+.bg-banner {
+    width: 100%;
+}
+
+.bg-bannertext {
+    position: absolute;
+    top: 40%;
+    color: white;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.bg-bannertext h1{
+    font-size: 60px;
+    font-family: 'Staatliches', cursive !important;
+}
+
+.banner-bottomtext {
+    font-family: 'Lato', sans-serif;
+}
+
+.font-dafoe {
+    font-family: "Mr Dafoe";
+
+}
+
+.btn-banner {
+    background-color: #D93333;
+    padding: 20px 50px;
+    font-size: 14px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.btn-nav {
+    background-color: #D93333;
+    padding: 15px 30px;
+    font-size: 12px;
+    border: 0px;
+    color: white;
+    cursor: pointer;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+
+.maintext {
+    background-color: #D93333;
+    color: white;
+    width: 350px;
+    padding: 25px 15px;
+    position: relative;
+}
+
+.maintext::before {
+    position: absolute;
+    content: '';
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    top: -5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #D93333;
+}
+
+.maintextbox {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+padding-top: 100px;
+}
+
+.main-paragraph {
+    width: 900px;
+    color: rgb(12, 3, 3);
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+
+}
+
+.icon-boxradius {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(204, 201, 201);
+    border-radius: 100%;
+    border: 2px solid grey;
+
+}
+
+.iconcover {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 25px;
+    color: rgb(83, 83, 83);
+}
+
+.inside-allbox {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row-reverse;
+
+}
+
+.inside-generalbox {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    padding: 45px;
+    margin-bottom: 50px;
+    transition: .4s;
+}
+.inside-generalbox:hover{
+    background-color: #f8f9fa;
+}
+
+.maintext2 {
+    background-color: #D93333;
+    color: white;
+    width: 420px;
+    padding: 25px 15px;
+    position: relative;
+}
+
+.maintext2:before {
+    position: absolute;
+    content: '';
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    top: -5px;
+    border-width: 2px;
+    border-style: solid;
+    border-color: #D93333
+}
+
+.main-paragraph2 {
+    width: 900px;
+    color: rgb(12, 3, 3);
+    font-family: 'Lato', sans-serif;
+    font-size: large;
+    text-align: center;
+}
+
+.bottom3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(241, 241, 241);
+    padding-top: 100px;
+
+}
+
+.boxes {
+    margin-top: 100px;
+
+}
+
+
+.demoimage {
+    width: 450px;
+}
+
+.images2 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+}
+
+.images2>div>p {
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.images2>div {
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.inside-generalbox2 {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 50px;
+    margin-right: 50px;
+    margin-top: 100px;
+    padding: 45px;
+    border: 1px solid #f8f9fa ;
+    transition: .4s;
+}
+.inside-generalbox2:hover{
+    background-color: #f8f9fa;
+}
+
+.icon-boxradius2 {
+    width: 150px;
+    height: 150px;
+    background-color: rgb(204, 201, 201);
+    border-radius: 100%;
+    border: 2px solid grey;
+
+}
+
+.icon-box3 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+}
+
+
+footer {
+    background-color: black;
+    width: 100%;
+}
+
+.icon4 {
+    color: white;
+    padding: 20px 15px 0px 15px;
+    background-color: #2C2C2C !important;
+    transition: .5s;
+    margin-left: 5px;
+}
+
+.icon4:hover {
+    background-color: #18CBFF !important;
+}
+
+.TEXT21 {
+    color: white;
+}
+
+.generalfooter {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    margin: 0px 50px;
+    padding: 100px 0px;
+}
+
+.icons1 {
+    display: flex;
+}
+
+.icon4>i {
+    font-size: 20px;
+}
+
+.logo3 {
+    margin-left: 280px;
+}
